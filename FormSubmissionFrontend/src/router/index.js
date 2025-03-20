@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router'; // Using createWebHistory for clean URLs
 import FormComponent from '../components/FormComponent.vue';
 import FormList from '../components/FormList.vue';
 
@@ -8,6 +8,6 @@ const routes = [
 ];
 
 export default createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(), // Use history mode for clean URLs without hashes
   routes
 });
