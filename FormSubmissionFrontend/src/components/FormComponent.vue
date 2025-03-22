@@ -58,6 +58,15 @@ const submitForm = async () => {
       Fields: formData.value
     });
     message.value = response.data.message;
+
+    // Reset the form data after submission
+    formData.value = {
+      name: '',
+      email: '',
+      gender: '',
+      subscription: '',
+      agree: false
+    };
   } catch (error) {
     console.error(error);
     message.value = `Error submitting form: ${error.response ? error.response.data : error.message}`;

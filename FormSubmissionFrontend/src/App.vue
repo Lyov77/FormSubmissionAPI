@@ -24,8 +24,8 @@ import FormComponent from './components/FormComponent.vue';
 <style scoped>
 /* General styles for the body and background */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #6e7dff, #a0b7ff);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #6c7fff, #a8c1ff);
   margin: 0;
   padding: 0;
   display: flex;
@@ -33,83 +33,59 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: #444;
 }
 
 /* Title styling */
 .app-title {
-  font-size: 3rem;
-  color: #fff;
-  margin-bottom: 20px;
-  font-weight: 600;
+  font-size: 3.5rem;
+  color: #1f2d3d;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1.5px;
 }
 
-/* Navigation bar styling */
+/* Navbar Styling */
 .navbar {
   display: flex;
-  gap: 30px;
   justify-content: center;
-  margin-bottom: 30px;
+  align-items: center;
+  background-color: #333; /* Darker and professional navbar color */
+  padding: 15px 20px;
+  border-radius: 8px; /* Smooth rounded edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
 .nav-link {
   font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 25px;
-  transition: background-color 0.3s, transform 0.2s;
+  margin: 0 15px; /* Adds some spacing between links */
+  padding: 10px 15px;
+  border-radius: 5px; /* Rounded buttons */
+  font-weight: 500; /* Slightly bolder for professional feel */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover effects for nav links */
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-  transform: translateY(-5px);
+  background-color: #0066cc; /* Subtle blue hover effect */
+  transform: scale(1.05); /* Slightly enlarges on hover for modern effect */
 }
+
+.nav-link:active {
+  background-color: #0057b7; /* Darker shade on active */
+}
+
 
 /* Styling for the form container */
 .form-container {
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 20px;
-  font-size: 1.1rem;
-}
-
-input, select {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 5px;
-}
-
-button {
-  background-color: #6e7dff;
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-button:hover {
-  background-color: #4e59cc;
-  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
@@ -124,7 +100,7 @@ button:hover {
   }
 
   .app-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 }
 </style>

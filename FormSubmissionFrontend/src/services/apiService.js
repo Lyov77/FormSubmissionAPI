@@ -5,7 +5,7 @@ const BASE_URL = 'http://localhost:7050/api/forms/list'; // Update with your API
 
 export const getSubmissions = async () => {
   try {
-    const response = await axios.get(`${BASE_URL}/list`);
+    const response = await axios.get(${BASE_URL}/list);
     return response.data;
   } catch (error) {
     console.error('Failed to fetch submissions:', error);
